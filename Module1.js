@@ -1,62 +1,61 @@
-
-  // Functions
-  function buildQuiz(){
+// Functions
+  function buildQuiz(module){
     // variable to store the HTML output
     const output = [];
 
     // for each question...
     myQuestions.forEach(
       (currentQuestion, questionNumber) => {
-  //      if (currentQuestion.questionType === "code"){
-
           // variable to store the list of possible answers
           const answers = [];
+              // and for each available answer...
+              for (letter in currentQuestion.answers) {
 
-          // and for each available answer...
-          for (letter in currentQuestion.answers) {
-
-            // ...add an HTML radio button
-            answers.push(
-                `<label>
+                  // ...add an HTML radio button
+                  answers.push(
+                      `<label>
               <input type="radio" name="question${questionNumber}" value="${letter}">
               ${letter} :
               ${currentQuestion.answers[letter]}
             </label>`
-            );
-          }
+                  );
+              }
 
-          // add this question and its answers to the output
-          output.push(
-              `<div class="slide">
+              // add this question and its answers to the output
+              output.push(
+                  `<div class="slide">
             <div class="question"> ${currentQuestion.question} </div>
             <div class="answers"> ${answers.join("")} </div>
           </div>`
-          );
-        }
-  //    }
+              );
+          }
     );
 
     // finally combine our output list into one string of HTML and put it on the page
     quizContainer.innerHTML = output.join('');
   }
 
-  function myPopup() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-  }
+  // function myPopup() {
+  //   var popup = document.getElementById("myPopup");
+  //   popup.classList.toggle("show");
+  // }
 
-  function showResults(){
+function showResult(){
 
+    showResults("code")
+}
 
+  function showResults(module){
+
+    // gather answer containers from our quiz
+    const answerContainers = quizContainer.querySelectorAll('.answers');
 
     // keep track of user's answers
     let numCorrect = 0;
 
     // for each question...
     myQuestions.forEach( (currentQuestion, questionNumber) => {
-      if (currentQuestion.questionType==="code"){
-        // gather answer containers from our quiz
-      const answerContainers = quizContainer.querySelectorAll('.answers');
+
       // find selected answer
       const answerContainer = answerContainers[questionNumber];
       const selector = `input[name=question${questionNumber}]:checked`;
@@ -67,6 +66,7 @@
         // add to the number of correct answers
         numCorrect++;
 
+        submitAnswer(userAnswer, currentQuestion.correctAnswer);
         // color the answers green
         answerContainers[questionNumber].style.color = 'lightgreen';
 
@@ -76,8 +76,9 @@
       else{
         // color the answers red
         answerContainers[questionNumber].style.color = 'red';
+        myPopup()
       }
-    }});
+    });
 
     // show number of correct answers out of total
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
@@ -111,6 +112,9 @@
     showSlide(currentSlide - 1);
   }
 
+  function submitAnswer(userAnswer, correctAnswer){
+
+  }
 
   // Variables
   const quizContainer = document.getElementById('quiz');
@@ -125,7 +129,7 @@
         c: "Brendan Eich"
       },
       correctAnswer: "c",
-      questionType: "person",
+        module: "person"
     },
     {
       question: "Which one of these is a JavaScript package manager?",
@@ -135,7 +139,7 @@
         c: "npm"
       },
       correctAnswer: "c",
-      questionType: "code"
+        module: "code"
     },
     {
       question: "Which tool can you use to ensure code quality?",
@@ -146,32 +150,23 @@
         d: "ESLint"
       },
       correctAnswer: "d",
-      questionType: "code"
+        module: "code"
     }
   ];
 
   // Kick things off
   buildQuiz();
 
-  //const peopleButton = document.getElementById("people");
-  //const codeButton = document.getElementById("code");
-
-
-
-
   // Pagination
   const previousButton = document.getElementById("previous");
   const nextButton = document.getElementById("next");
   const slides = document.querySelectorAll(".slide");
   let currentSlide = 0;
-  //peopleButton.addEventListener('click', showNextSlide);
-  //codeButton.addEventListener('click', showNextSlide);
 
   // Show the first slide
   showSlide(currentSlide);
 
   // Event listeners
-  submitButton.addEventListener('click', showResults);
+  submitButton.addEventListener('click', showResult);
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
-

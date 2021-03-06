@@ -46,6 +46,22 @@ button{
 	cursor: pointer;
 	margin-bottom: 20px;
 }
+
+navbutton{
+    display: inline-block;
+    height: 216px;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 390px;
+}
+#close-image img {
+    display: block;
+    height: 216px;
+    width: 390px;
+}
+
+
 button:hover{
 	background-color: #38a;
 }
@@ -103,6 +119,9 @@ button:hover{
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
+.bottom-three {
+     margin-bottom: 3cm;
+  }
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
@@ -126,23 +145,22 @@ button:hover{
 </head>
 
 <body>
-<h1>Quiz</h1>
-<div class="quiz-container">
-  <div id="quiz"></div>
-</div>
-<!-- <div class="popup" onclick="myPopup()">Submit Answer
-  <span class="popuptext" id="myPopup"> Hello</span>
-</div> -->
+<h1>Home</h1>
+<p class="bottom-three"> <p>
+<a href = "Module1.html"><button id = "module1"> Module 1 </button></a>
+<button id = "module2"> Module 2 </button>
+<button id = "module3"> Module 3 </button>
+<button id = "module4"> Module 4 </button>
+<button id = "module5"> Module 5 </button>
+<button id = "module6"> Module 6 </button>
+<button id = "module7"> Module 7 </button>
+<button id = "module8"> Module 8 </button>
+<button id = "module9"> Module 9 </button>
+<button id = "module10"> Module 10 </button>
+<button id = "module11"> Module 11 </button>
+<button id = "module12"> Module 12 </button>
+<button id = "module13"> Module 13 </button>
+<button id = "module14"> Module 14 </button>
 
-<button id="code"> Code </button>
-<button id="people"> People </button>
-
-
-
-<button id="previous">Previous Question</button>
-<button id="next">Next Question</button>
-<button id="submit">Submit Quiz</button>
-<div id="results"></div>
-<script src="javascript.js"></script>
 </body>
 </html>
