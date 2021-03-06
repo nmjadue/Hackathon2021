@@ -7,30 +7,32 @@
     // for each question...
     myQuestions.forEach(
       (currentQuestion, questionNumber) => {
+        if (currentQuestion.questionType == "code"){
 
-        // variable to store the list of possible answers
-        const answers = [];
+          // variable to store the list of possible answers
+          const answers = [];
 
-        // and for each available answer...
-        for(letter in currentQuestion.answers){
+          // and for each available answer...
+          for (letter in currentQuestion.answers) {
 
-          // ...add an HTML radio button
-          answers.push(
-            `<label>
+            // ...add an HTML radio button
+            answers.push(
+                `<label>
               <input type="radio" name="question${questionNumber}" value="${letter}">
               ${letter} :
               ${currentQuestion.answers[letter]}
             </label>`
-          );
-        }
+            );
+          }
 
-        // add this question and its answers to the output
-        output.push(
-          `<div class="slide">
+          // add this question and its answers to the output
+          output.push(
+              `<div class="slide">
             <div class="question"> ${currentQuestion.question} </div>
             <div class="answers"> ${answers.join("")} </div>
           </div>`
-        );
+          );
+        }
       }
     );
 
@@ -110,9 +112,6 @@
     showSlide(currentSlide - 1);
   }
 
-  function submitAnswer(userAnswer, correctAnswer){
-
-  }
 
   // Variables
   const quizContainer = document.getElementById('quiz');
@@ -126,7 +125,9 @@
         b: "Sheryl Sandberg",
         c: "Brendan Eich"
       },
-      correctAnswer: "c"
+      correctAnswer: "c",
+      questionType: "person",
+      hint: "It starts with a B"
     },
     {
       question: "Which one of these is a JavaScript package manager?",
@@ -135,7 +136,8 @@
         b: "TypeScript",
         c: "npm"
       },
-      correctAnswer: "c"
+      correctAnswer: "c",
+      questionType: "code"
     },
     {
       question: "Which tool can you use to ensure code quality?",
@@ -145,21 +147,30 @@
         c: "RequireJS",
         d: "ESLint"
       },
-      correctAnswer: "d"
+      correctAnswer: "d",
+      questionType: "code"
     }
   ];
 
   // Kick things off
   buildQuiz();
 
+  const peopleButton = document.getElementById("people");
+  const codeButton = document.getElementById("code");
+
+
+
+
   // Pagination
   const previousButton = document.getElementById("previous");
   const nextButton = document.getElementById("next");
   const slides = document.querySelectorAll(".slide");
-  let currentSlide = 0;
+  let currentSlide = -1;
+  peopleButton.addEventListener('click', showNextSlide);
+  codeButton.addEventListener('click', showNextSlide);
 
   // Show the first slide
-  showSlide(currentSlide);
+  //showSlide(currentSlide);
 
   // Event listeners
   submitButton.addEventListener('click', showResults);
