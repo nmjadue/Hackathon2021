@@ -39,14 +39,18 @@ While I've been in the computer schienc and tech community for a while, this is 
 <b> Rachel's Takeaways: </b>
   
 ## What's next for DigiTutor
-<b> Improving Our Curriculum </b>
+<b> Improving Our Curriculum </b>:
 While our quiz provides some education, we need to include more prelimiary information. Our ideas for providing more information include showing a tutorial before the quiz. Furthermore, we wanted to include actual pictures of the icons or buttons that we wanted our users to press. This should help the user understand their device better.
 
-<b> Including More Gamification </b>
+<b> Including More Gamification </b>:
 We want our product to be fun! We created a character that can 'level up' as a user completes different modules. Ideally, that character can have a larger role.
 
-<b> Adding Accessibility Modules </b>
+<b> Adding Accessibility Modules </b>:
 As we know, many of our elderly struggle with hearing or visual impairments. Fortunately, many devices now include many tools to help navigate despite these issues. We would like to include a module to help users learn how to toggle these functions, then how to use them.
+
+
+<b> Optimizing Code </b>:
+We would like to remove the redundancies throughout the code and make it more optimal. This would include creating a single Javascript file, CSS file, and HTML file since the changes form file to file are small. 
 
 ## References
 Pop-up button inspiration: https://www.w3schools.com/howto/howto_js_popup.asp
