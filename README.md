@@ -22,6 +22,7 @@ grades the user responses.  This code also contains
 the questions for each module.
 
 <b>Figma </b>
+
 Figma is a collaborative graphics editing and prototyping tool.
 We used this primarily for the interaction designs as well as general
 page layouts. We used built in plugins from Figma to help us
