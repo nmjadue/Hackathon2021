@@ -21,6 +21,12 @@ which question and answers to display, as well as
 grades the user responses.  This code also contains 
 the questions for each module.
 
+<b>Figma </b>
+Figma is a collaborative graphics editing and prototyping tool.
+We used this primarily for the interaction designs as well as general
+page layouts. We used built in plugins from Figma to help us
+translate the design to HTML and CSS to incorporate in our project.
+
 
 ## Challenges we ran into
 
@@ -34,9 +40,10 @@ We're very proud that we finished our product! Of course, we wanted to develop m
 Through this project, I learned coding basics. I had zero coding experience before this Hackathon. My undergraduate degrees include English and Integrated Language Arts Education and I am currently pursing a Juris Doctorate. I became interested in coding as my school exposed me to the world of cybersecurity. While I understood some basic computer concepts, I struggled to understand exactly how anything actually functioned. Through this project, I learned about the process from idea to finished product. I also learned how code is used. I am excited to learn more about different coding languages to complete my own projects, now that I understand how to use them.
 
 <b> Natalie's Takeaways: </b>
-While I've been in the computer schienc and tech community for a while, this is my first Hackathon. I came into this experience intending to complete a project and have fun. Not only did I do that, but I learned some valueable programming skills with Javascript, CSS, and HTML. I also feel more confident attending future Hackathons. 
+While I've been in the computer science and tech community for a while, this is my first Hackathon. I came into this experience intending to complete a project and have fun. Not only did I do that, but I learned some valueable programming skills with Javascript, CSS, and HTML. I also feel more confident attending future Hackathons. 
 
 <b> Rachel's Takeaways: </b>
+I've recently decided to make a career shift from Banking to UX/UI Design, and this is my first experience with it. I intended to gain some experience and complete a project, but I was also able to get a headstart on using some UX programs that I know will be helpful for my future career moves. I learned a lot about the project process from the first idea brainstorming to the finalization of the finished website. I'm so grateful that I'm able to also walk away with some knowledge in Figma, which I will be using in an upcoming UX Design Certification.
   
 ## What's next for DigiTutor
 <b> Improving Our Curriculum </b>:
