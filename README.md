@@ -8,7 +8,7 @@ The current pandemic spotlighted a major issue: lack of technological understand
 Our website features gamification elements paired with traditional educational methods to teach the elderly how to use their smart phone. We started with the ever-simple quiz function. The questions attempt to move in a very detailed, chronological order to guide the user every step of the way from A-Z. We cover hardware, software, password security, browsing functions, camera, and posting to social media.
 
 ## How we built it
-This project mostly uses Javascript, HTML, and CSS. 
+This project mostly uses Javascript, HTML, and CSS. We used photoshop and figma to create the images. 
 
 <b>Javascript </b>
 
@@ -21,7 +21,10 @@ which question and answers to display, as well as
 grades the user responses.  This code also contains 
 the questions for each module.
 
+
 ## Challenges we ran into
+
+Most of the challenges we had delt with not having the skills to implement the functionality we origianally intended. For example, instead of just asking a question and taking user answer, we wish we could have included other forms of questions. These would have been including images in the questions, creating matching questions, and further Gameifying this learning application. Since it was our first time programming in these languages, we weren't able to bring our vision to reality completely. Also, because of our limited programming experience in these languages, our code is not very effective. We have code that is not optimal and copied and pasted multiple times. 
 
 ## Accomplishments that we're proud of
 We're very proud that we finished our product! Of course, we wanted to develop more questions and modules. However, we are very proud that we were able to complete so much development. Additionally, no one in our group has ever attended a Hackathon before. We are proud that we felt comfortable enough not only to sign up, but to finish a product.
@@ -31,6 +34,7 @@ We're very proud that we finished our product! Of course, we wanted to develop m
 Through this project, I learned coding basics. I had zero coding experience before this Hackathon. My undergraduate degrees include English and Integrated Language Arts Education and I am currently pursing a Juris Doctorate. I became interested in coding as my school exposed me to the world of cybersecurity. While I understood some basic computer concepts, I struggled to understand exactly how anything actually functioned. Through this project, I learned about the process from idea to finished product. I also learned how code is used. I am excited to learn more about different coding languages to complete my own projects, now that I understand how to use them.
 
 <b> Natalie's Takeaways: </b>
+While I've been in the computer schienc and tech community for a while, this is my first Hackathon. I came into this experience intending to complete a project and have fun. Not only did I do that, but I learned some valueable programming skills with Javascript, CSS, and HTML. I also feel more confident attending future Hackathons. 
 
 <b> Rachel's Takeaways: </b>
   
