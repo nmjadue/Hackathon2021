@@ -8,7 +8,7 @@
 
 body{
 	font-size: 20px;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'arial', arial,serif;
 	color: #333;
   font-weight: 300;
   text-align: center;
@@ -119,9 +119,6 @@ button:hover{
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
-.bottom-three {
-     margin-bottom: 3cm;
-  }
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
@@ -145,22 +142,16 @@ button:hover{
 </head>
 
 <body>
-<h1>Home</h1>
-<p class="bottom-three"> <p>
-<a href = "Module1.html"><button id = "module1"> Module 1 </button></a>
-<button id = "module2"> Module 2 </button>
-<button id = "module3"> Module 3 </button>
-<button id = "module4"> Module 4 </button>
-<button id = "module5"> Module 5 </button>
-<button id = "module6"> Module 6 </button>
-<button id = "module7"> Module 7 </button>
-<button id = "module8"> Module 8 </button>
-<button id = "module9"> Module 9 </button>
-<button id = "module10"> Module 10 </button>
-<button id = "module11"> Module 11 </button>
-<button id = "module12"> Module 12 </button>
-<button id = "module13"> Module 13 </button>
-<button id = "module14"> Module 14 </button>
-
+<h1>Quiz</h1>
+<div class="quiz-container">
+  <div id="quiz"></div>
+</div>
+<button id="previous">Previous Question</button>
+<navbutton id="next"><img src="../Images/next_button1.png" , height="40%" , width="40%"></navbutton>
+<a href = "../Unit1_homepage.html">
+<button id="submit">Submit Quiz</button>
+</a>
+<div id="results"></div>
+<script src="../JavaScript/UP.js"></script>
 </body>
 </html>
