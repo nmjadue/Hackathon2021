@@ -8,7 +8,7 @@ Hello
 ## How we built it
 This project mostly uses Javascript, HTML, and CSS. 
 
-###Javascript
+###gitJavascript
 
 The Javascript controls the functional aspects of the 
 application. This includes navigation, button clicks, 
