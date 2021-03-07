@@ -147,6 +147,16 @@
       },
       correctAnswer: "d",
       questionType: "code"
+    },
+    {
+      question: "Your cell phone has hardware and software. What does hardware mean?",
+      answers: {
+        a: "it is super secure",
+        b: "the physical pieces and technology of your phone",
+        c: "applications and setting within your phone"
+      },
+      correctAnswer: "b",
+      questionType: "hardware"
     }
   ];
 

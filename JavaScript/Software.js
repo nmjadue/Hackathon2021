@@ -35,15 +35,16 @@
     quizContainer.innerHTML = output.join('');
   }
 
-  // function myPopup() {
-  //   var popup = document.getElementById("myPopup");
-  //   popup.classList.toggle("show");
-  // }
-
-function showResult(){
-
-    showResults("code")
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  if (popup.innerHTML !== myQuestions[currentSlide]['hint']) {
+     popup.innerHTML = myQuestions[currentSlide]['hint'];
+     popup.classList.toggle("show");
+   } else {
+    popup.classList.toggle("show");
+  }
 }
+
 
   function showResults(module){
 
@@ -76,7 +77,6 @@ function showResult(){
       else{
         // color the answers red
         answerContainers[questionNumber].style.color = 'red';
-        myPopup()
       }
     });
 
@@ -96,11 +96,11 @@ function showResult(){
     }
     if(currentSlide === slides.length-1){
       nextButton.style.display = 'none';
-      submitButton.style.display = 'inline-block';
+      finishButton.style.display = 'inline-block';
     }
     else{
       nextButton.style.display = 'inline-block';
-      submitButton.style.display = 'none';
+      finishButton.style.display = 'none';
     }
   }
 
@@ -119,39 +119,77 @@ function showResult(){
   // Variables
   const quizContainer = document.getElementById('quiz');
   const resultsContainer = document.getElementById('results');
-  const submitButton = document.getElementById('submit');
+  const finishButton = document.getElementById("finish");
   const myQuestions = [
-    {
-      question: "Who invented JavaScript?",
+    {{
+      question: "Now that we are becoming more comfortable with our phone, let's talk about software! What is software?",
       answers: {
-        a: "Douglas Crockford",
-        b: "Sheryl Sandberg",
-        c: "Brendan Eich"
+        a: "programs that exist within your phone",
+        b: "information",
+        c: "passwords"
       },
-      correctAnswer: "c",
-        module: "person"
+      correctAnswer: "a",
+        hint: "Think about what hardware means. What does hardware not cover?"
     },
     {
-      question: "Which one of these is a JavaScript package manager?",
+      question: "Let's practice using your phone. First, unlock you phone. What do you see?",
       answers: {
-        a: "Node.js",
-        b: "TypeScript",
-        c: "npm"
+        a: "the time, date, and blurbs of information ",
+        b: "a bunch of colored icons in front of a background",
+        c: "numbers"
       },
-      correctAnswer: "c",
-        module: "code"
+      correctAnswer: "b",
+        hint: "If a friend set up your phone for you, they may have given you a pin or password. Make sure to enter this to unlock your phone"
     },
     {
-      question: "Which tool can you use to ensure code quality?",
+      question: "Let's make a phone call! First, find the green icon with a phone drawn on it. Touch the icon. At the botton, select the icon that looks like a waffle and says keypad. What do you see?",
       answers: {
-        a: "Angular",
-        b: "jQuery",
-        c: "RequireJS",
-        d: "ESLint"
+        a: "names of people I may want to call ",
+        b: "people who I have spoken to recently",
+        c: "numbers of a phone"
       },
-      correctAnswer: "d",
-        module: "code"
-    }
+      correctAnswer: "c",
+        hint: "there were a lot of steps in this question! Make sure you followed the steps precisely."
+    },
+    {
+      question: "Let's call someone! Type in the phone number of who you would like to call. Then, touch the green icon at the bottom of the screen. Put the phone to your ear. Did the call dial?",
+      answers: {
+        a: "yes",
+        b: "no"
+      },
+      correctAnswer: "a",
+        hint: "If the call did not dial, be sure to make sure the phone number was typed correctly. Also, make sure you selected the green icon."
+    },
+    {
+      question: "I hope you had a great conversation. Let's do something else! Let's go to the home screen. What is the home screen?",
+      answers: {
+        a: "the phone screen numbers",
+        b: "the colorful icons in front of a background",
+        c: "the screen when my phone is locked."
+      },
+      correctAnswer: "b",
+        hint: "if you just unlocked your phone, what does it look like?"
+    },
+    {
+      question: "Now that you know what the home screen is, how do you get there?",
+      answers: {
+        a: "use your thumb to swipe up from the bottom of the screen",
+        b: "press the power button quickly",
+        c: "press the up volume button then the down."
+      },
+      correctAnswer: "a",
+        hint: "this one is tricky. Why don't you try some of the options and see what happens?"
+    },
+    {
+      question: "Now that you're on the homescreen, you should see that your phone already has many applications or 'apps.' You can navigate through your app library by swiping left and right. Try it!",
+      answers: {
+        a: "yes!",
+        b: "No, I'm tired."
+
+      },
+      correctAnswer: "a",
+        hint: "this is an easy one!!!"
+    },
   ];
 
   // Kick things off
@@ -160,6 +198,7 @@ function showResult(){
   // Pagination
   const previousButton = document.getElementById("previous");
   const nextButton = document.getElementById("next");
+  const homeButton = document.getElementById("home");
   const slides = document.querySelectorAll(".slide");
   let currentSlide = 0;
 
@@ -167,6 +206,6 @@ function showResult(){
   showSlide(currentSlide);
 
   // Event listeners
-  submitButton.addEventListener('click', showResult);
+  finishButton.addEventListener('click', showResults);
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
