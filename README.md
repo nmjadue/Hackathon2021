@@ -10,7 +10,7 @@ Our website features gamification elements paired with traditional educational m
 ## How we built it
 This project mostly uses Javascript, HTML, and CSS. 
 
-###gitJavascript
+<b>Javascript </b>
 
 The Javascript controls the functional aspects of the 
 application. This includes navigation, button clicks, 
@@ -27,7 +27,7 @@ the questions for each module.
 We're very proud that we finished our product! Of course, we wanted to develop more questions and modules. However, we are very proud that we were able to complete so much development. Additionally, no one in our group has ever attended a Hackathon before. We are proud that we felt comfortable enough not only to sign up, but to finish a product.
 
 ## What we learned
-Hello
+
 ## What's next for DigiTutor
 Hello
 
