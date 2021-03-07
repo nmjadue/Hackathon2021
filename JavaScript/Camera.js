@@ -122,77 +122,61 @@ function myFunction() {
   const finishButton = document.getElementById("finish");
   const myQuestions = [
     {
-      question: "Your cell phone has hardware and software. What does hardware mean?",
+      question: "Let's practice using our camera. First, we must open the camera app. Which icon do you think is for the camera?",
       answers: {
-        a: "it is super secure",
-        b: "the physical pieces and technology of your phone",
-        c: "applications and setting within your phone"
-      },
-      correctAnswer: "b",
-        hint: "out of the options, what is best described by the word 'hard?'"
-    },
-    {
-      question: "What is an example of hardware?",
-      answers: {
-        a: "your phone camera",
-        b: "your email",
-        c: "your password"
+        a: "instagram",
+        b: "the photo one",
+        c: "the one that looks like a camera"
 
-      },
-      correctAnswer: "a",
-        hint: "which can you physically touch?"
-    },
-    {
-      question: "Let's Practice turning our phone on and off. First, find the power button. Which one is the power button?",
-      answers: {
-       a: "the long, thin one on the right-hand side",
-       b: "the small one on the left-hand side on the top",
-       c: "the small one on the left-hand side on the bottom"
-
-      },
-      correctAnswer: "a",
-        hint: "which one is all by itself?"
-    },
-    {
-      question: "Great! Now, we must find the volume button. Which one is NOT the volume button?",
-      answers: {
-        a: "the long, thin one on the right-hand side",
-        b: "the long, thin one on the right-hand side",
-        c: "the small one on the left-hand side on the bottom"
-      },
-      correctAnswer: "a",
-        hint: "which one is the power button? The volume buttons must be the remaining options."
-    },
-    {
-      question: "Excellent! Now that we have become acquainted with our options, let's turn our phone off. Hold down the power button, then ALSO hold down the top volume button. What do you see on your screen?",
-      answers: {
-        a: "Nothing",
-        b: "3 images that look like long ovals",
-        c: "an apple"
-      },
-      correctAnswer: "b",
-        hint: "you may have to hold the buttons down for a few second before you see the correct screen! You may feel a little buzz too."
-    },
-    {
-      question: "Now that we've reached our power down screen, take your finger and touch the image that says power. Slide it to the right, then leg go. What do you see now?",
-      answers: {
-        a: "Nothing",
-        b: "3 images that look like long ovals",
-        c: "an apple"
-      },
-      correctAnswer: "a",
-        hint: "the power button looks like a little white circle with another red circle inside."
-    },
-    {
-      question: "Let's practice turning our phone back on! Hold down the power button on the right hand side. What do you see?",
-      answers: {
-        a: "Nothing",
-        b: "3 images that look like long ovals",
-        c: "an apple",
       },
       correctAnswer: "c",
-        hint: "you should only need to hold on to the power button a few seconds! Are you using the correct button?"
+      hint: "No hint"
     },
+    {
+      question: "Once we open up the camera, we must decide if we want flash. Where can we turn on or off flash?",
+      answers: {
+        a: "the lightning in the upper left corner",
+        b: "the photo one",
+        c: "i genuinely do not care about the flash setting go home"
+
+      },
+      correctAnswer: "a",
+      hint: "No hint"
+    },
+    {
+      question: "Great! We can also decide if we want to be in selfie mode or normal mode. Where can we change this setting?",
+      answers: {
+        a: "by swiping left and right",
+        b: "the circuluar arrows on the bottom corner",
+        c: "i genuinely do not care go home"
+
+      },
+      correctAnswer: "b",
+      hint: "No hint"
+    },
+        {
+      question: "Time to point and shoot! How do we actually take the photo?",
+      answers: {
+        a: "by swiping left and right",
+        b: "the circuluar arrows on the bottom corner",
+        c: "the white circular button in the middle on the bottom"
+
+      },
+      correctAnswer: "c",
+          hint: "Try it! What happens?"
+    },
+
+      {
+      question: "Yay we took a picture! Where can we check it out?",
+      answers: {
+        a: "going to the icon on the bottom left corner",
+        b: "from the home screen, choosing the icon that says photos",
+        c: "both"
+
+      },
+      correctAnswer: "c",
+        hint: "Try it! What happens?"
+    }
   ];
 
   // Kick things off

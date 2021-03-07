@@ -122,6 +122,7 @@ function myFunction() {
   const finishButton = document.getElementById("finish");
   const myQuestions = [
     {
+
       question: "Let's practice using our apps. Which one of these apps is for browsing the internet?",
       answers: {
         a: "you must click on a link from somewhere else first",
@@ -206,6 +207,7 @@ function myFunction() {
         b: "username@password.com, ex. puppies@ismellyourfeet.com",
         c: "username@doman.com, ex. puppies@google.com"
       },
+
       correctAnswer: "c",
         hint: "Remember, passwords are kept secret!"
     }

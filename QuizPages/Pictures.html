@@ -1,10 +1,175 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+
+
+
+<style>
+@import url(https://fonts.googleapis.com/css?family=Sen&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Saira&display=swap);
+
+body{
+	font-size: 20px;
+	font-family: Sen;
+	color: #333;
+  font-weight: 300;
+  text-align: center;
+  background-color: #f8f6f0;
+  background-image: url('../Images/bg.jpg');
+}
+h1{
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 50px;
+  font-family:Saira;
+  background-color: #b9b6e5;
+  color: black;
+}
+.question{
+  font-size: 40px;
+  margin-bottom: 10px;
+  border: 2px solid lightslategray ;
+  background-color: #b6d9fd;
+  border-radius: 8px;
+}
+.answers {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+  font-size: 30px;
+
+
+}
+.answers label{
+  display: block;
+  background-color: white;
+  border: 2px solid lightslategray ;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+button{
+  font-family: 'Work Sans', sans-serif;
+	font-size: 22px;
+	background-color: #279;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+
+navbutton{
+    display: inline-block;
+    height: 216px;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 390px;
+}
+#close-image img {
+    display: block;
+    height: 216px;
+    width: 390px;
+}
+
+
+button:hover{
+	background-color: #38a;
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container{
+  position: relative;
+  left: 500px;
+  height: 500px;
+  width: 900px;
+  margin-top: 40px;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+</style>
 </head>
+
 <body>
-$END$
+<h1>Pictures</h1>
+<div class="quiz-container">
+  <div id="quiz"></div>
+</div>
+<navbutton id="previous"><img src="../Images/previous_button.png", height="53%" , width="50%"></navbutton>
+<navbutton id="next"><img src="../Images/next_button1.png", height="53%" , width="50%"></navbutton>
+<div class="popup" onclick="myFunction()"><img src="../Images/hint_button_1.png", height="12%", width="50%">
+  <span class="popuptext" id="myPopup">Popup text...</span>
+</div>
+<navbutton id="finish"><img src="../Images/finish_button_1.png", height="53%" , width="50%"></navbutton>
+<a href = "../Homepage/homepage.html">
+<navbutton id="home"><img src="../Images/home_button_1.png", height="50%" , width="50%"></navbutton>
+</a>
+<div id="results"></div>
+<script src="../JavaScript/Camera.js"></script>
 </body>
 </html>
