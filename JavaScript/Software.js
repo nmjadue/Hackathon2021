@@ -121,7 +121,7 @@ function myFunction() {
   const resultsContainer = document.getElementById('results');
   const finishButton = document.getElementById("finish");
   const myQuestions = [
-    {{
+    {
       question: "Now that we are becoming more comfortable with our phone, let's talk about software! What is software?",
       answers: {
         a: "programs that exist within your phone",

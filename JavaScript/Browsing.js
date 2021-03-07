@@ -122,82 +122,96 @@ function myFunction() {
   const finishButton = document.getElementById("finish");
   const myQuestions = [
     {
-      question: "You're moving up in the world! You're almost ready to start using apps. First, let's talk about passwords and security.",
+
+      question: "Let's practice using our apps. Which one of these apps is for browsing the internet?",
       answers: {
-        a: "yes!",
-        b: "No, I'm tired."
+        a: "you must click on a link from somewhere else first",
+        b: "at the bottom",
+        c: "at the top"
       },
-      correctAnswer: "a",
-        hint: "this is an easy one!!!"
+      correctAnswer: "c",
+      hint: "Where would you put a title of a book?"
     },
     {
-      question: "When you open an app you haven't used before, it may ask you for a username and password. What is a username?",
+      question:  "Scroll all the way to the top, then let go. You should see 3 small icons on the bottom. What happens if you push the one on the far right, that looks like 2 squares?",
       answers: {
-        a: "a username creates an identity so the application can recognize who you are",
-        b: "a username verifies who you are"
+        a: "it refreshes the page",
+        b: "all the tabs you have open expand so that you can select them",
+        c: "it opens saved pages, or bookmarks"
+      },
+      correctAnswer: "b",
+      hint: "try it! What happens?"
+
+    },
+    {
+      question: "Nice! Now try the book icon. What happens?",
+      answers: {
+        a: "it refreshes the page",
+        b: "all the tabs you have open expand so that you can select them",
+        c: "it opends saved pages, or bookmarks"
 
       },
-      correctAnswer: "a",
-        hint: "usernames are often public, meaning many people may see it. If everyone knows a username, can you use it to prove your identity?"
+      correctAnswer: "c",
+      hint: "try it! What happens?"
     },
-    {
-      question: "So, what's a password then?",
+        {
+      question: "Great! Now, try the circular arrow at the top right. What happens?",
       answers: {
-        a: "a username creates an identity so the application can recognize who you are",
-        b: "a username verifies who you are"
+        a: "it refreshes the page",
+        b: "all the tabs you have open expand so that you can select them",
+        c: "it opends saved pages, or bookmarks"
+      },
+      correctAnswer: "a",
+          hint: "try it! What happens?"
+    },
+
+      {
+      question: "Let's try email. Which icon opens up the email application?",
+      answers: {
+        a: "the birdie",
+        b: "the big F",
+        c: "the envelope! That's TOO EASY"
+      },
+      correctAnswer: "c",
+        hint: "what just makes you think mail?"
+    },
+
+      {
+      question: "If someone set up mail for you, what do you see?",
+      answers: {
+        a: "the birdie",
+        b: "your inbox",
+        c: "the envelope! That's TOO EASY"
 
       },
       correctAnswer: "b",
-        hint: "passwords are usually secret, meaning only you should know what your password is"
+        hint: "if someone is sending you mail, where would you see it? What would you call it?"
     },
-    {
-      question: "Great! You are almost ready to start registering for apps! Let's try to keep you information as safe as possible. The internet can be a scary place! Is it okay to use the same username in more than one app?",
+
+          {
+      question: "Let's send a message! Which icon do you select?",
       answers: {
-        a: "yes, this is relatively safe!",
-        b: "no. you should never repeat a username if you can help it",
-      },
-      correctAnswer: "a",
-        hint: "Think about your name. How often do you share it with others?"
-    },
-    {
-      question: "Since it's okay to use the same username in many apps, is it okay to use the same password?",
-      answers: {
-        a: "yes, this is relatively safe!",
-        b: "no. you should never repeat a password if you can help it"
+        a: "the three lines in the bottom left",
+        b: "the square with pencil in the bottom right",
+        c: "the envelope! That's TOO EASY"
+
       },
       correctAnswer: "b",
-        hint: "Think about it this way. Would you use the same key for every lock?"
+        hint: "We've already used the envelope image!"
     },
-    {
-      question: "Passwords are pretty important! What are some steps you can take to make a strong password?",
+
+          {
+      question: "Maybe the most important part about sending an email correctly is typing in the email address correctly. They must follow a price format. What format does that look like?",
       answers: {
-        a: "try to make it at least 12-14 characters long",
-        b: "use letters, numbers, AND a symbol",
-        c: "come up with a phrase, then make your password the first letters of each word",
-        d: "all of the above"
+        a: "domain@username.com, ex. google@puppies.com",
+        b: "username@password.com, ex. puppies@ismellyourfeet.com",
+        c: "username@doman.com, ex. puppies@google.com"
       },
-      correctAnswer: "d",
-        hint: "What would make your password harder to guess?"
-    },
-    {
-      question: "Wow! It sounds like passwords can be complicated. Am I supposed to memorize them all?",
-      answers: {
-        a: "yes!",
-        b: "No, that's way too hard.",
-      },
-      correctAnswer: "b",
-        hint: "Let's be honest. Do you remember what you ate for breakfast this morning? How about yesterday?"
-    },
-    {
-      question: "Hm. How do I keep track of my passwords then?",
-      answers: {
-        a: "make one complicated password, then memorize just that one":q!::q!,
-        b: "write them down in a notebook, and keep it in a safe place",
-        c: "make a list of the passwords and email them to yourself"
-      },
-      correctAnswer: "b",
-        hint: "with your method, could someone figure out your password?"
+
+      correctAnswer: "c",
+        hint: "Remember, passwords are kept secret!"
     }
+
   ];
 
   // Kick things off
