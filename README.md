@@ -27,9 +27,22 @@ the questions for each module.
 We're very proud that we finished our product! Of course, we wanted to develop more questions and modules. However, we are very proud that we were able to complete so much development. Additionally, no one in our group has ever attended a Hackathon before. We are proud that we felt comfortable enough not only to sign up, but to finish a product.
 
 ## What we learned
+<b> AnnaMaria's Takeaways: </b>
+Through this project, I learned coding basics. I had zero coding experience before this Hackathon. My undergraduate degrees include English and Integrated Language Arts Education and I am currently pursing a Juris Doctorate. I became interested in coding as my school exposed me to the world of cybersecurity. While I understood some basic computer concepts, I struggled to understand exactly how anything actually functioned. Through this project, I learned about the process from idea to finished product. I also learned how code is used. I am excited to learn more about different coding languages to complete my own projects, now that I understand how to use them.
 
+<b> Natalie's Takeaways: </b>
+
+<b> Rachel's Takeaways: </b>
+  
 ## What's next for DigiTutor
-Hello
+<b> Improving Our Curriculum </b>
+While our quiz provides some education, we need to include more prelimiary information. Our ideas for providing more information include showing a tutorial before the quiz. Furthermore, we wanted to include actual pictures of the icons or buttons that we wanted our users to press. This should help the user understand their device better.
+
+<b> Including More Gamification </b>
+We want our product to be fun! We created a character that can 'level up' as a user completes different modules. Ideally, that character can have a larger role.
+
+<b> Adding Accessibility Modules </b>
+As we know, many of our elderly struggle with hearing or visual impairments. Fortunately, many devices now include many tools to help navigate despite these issues. We would like to include a module to help users learn how to toggle these functions, then how to use them.
 
 ## References
 Pop-up button inspiration: https://www.w3schools.com/howto/howto_js_popup.asp
