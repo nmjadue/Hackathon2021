@@ -191,6 +191,9 @@ function myFunction() {
     {
       question: "Hm. How do I keep track of my passwords then?",
       answers: {
+
+        a: "make one complicated password, then memorize just that one",
+
         a: "make one complicated password, then memorize just that one",
         b: "write them down in a notebook, and keep it in a safe place",
         c: "make a list of the passwords and email them to yourself"
